@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(ellipse at left, #000, rgb(139, 22, 22));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: radial-gradient(ellipse at central, #000, rgb(139, 22, 22));
+}
+
+.header-buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-buttons li {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: rgb(139, 22, 22);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.header-buttons li:hover {
+  color: rgb(139, 22, 22);
+  background-color: white;
+  border: 1px solid white;
+}
+
+.header-buttons a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#icon {
+  width: 8rem;
+  height: 6rem;
+}
+
+.slider {
+  margin: 50 auto;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.slider-content {
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+
+.slider-content input,
+.img-mobile {
+  display: none;
+}
+
+.slide-box {
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  transition: 1s;
+}
+
+.slide-box img {
+  width: 100%;
+  height: 500px;
+}
+
+.nav-manual,
+.nav-auto {
+  position: absolute;
+  width: 100%;
+  margin-top: 35%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+  border: 1px solid #ff0054;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 100;
+  z-index: 1;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+  background-color: #ff0054;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-auto .auto-btn2,
+#radio3:checked ~ .nav-auto .auto-btn3 {
+  background-color: #ff0054;
+}
+
+#radio1:checked ~ .primeiro {
+  margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+  margin-left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+  .img-desktop {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+  }
+
+  .nav-auto,
+  .nav-manual {
+    margin-top: 60%;
+  }
+}
+
+.main {
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  align-content: center;
+  height: auto;
+}
+
+.container-pesquisa {
+  margin-top: 6rem;
+}
+
+#input-de-pesquisar {
+  padding: 1rem;
+  width: 80%;
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#button {
+  margin-top: 2rem;
+  margin-left: 7rem;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: wait;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+#button:hover {
+  color: rgb(139, 22, 22);
+  background-color: white;
+  border: 1px solid white;
+}
+
+/* destaques */
+
+.livros_destaque {
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+.titulo-sessao,
+.livros_destaque h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 45px;
+  color: #fff;
+}
+
+.destaque_box {
+  width: 95%;
+  height: 585px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.destaque_card {
+  width: 265px;
+  height: 530px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #fff;
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.destaque_card:hover {
+  box-shadow: 0 0 10px rgb(139, 22, 22);
+}
+
+.destaque_img img {
+  align-content: center;
+  width: 250px;
+  height: 365px;
+}
+
+.destaque_tag h3 {
+  margin: 2px;
+  color: #fff;
+}
+
+.destaque_tag h2 {
+  margin: 2px;
+  color: #fff;
+}
+
+.destaque_tag .escritor {
+  color: #ccc;
+}
+
+.destaque_tag .categorias {
+  color: rgb(139, 22, 22);
+}
+
+.destaque_tag .destaque_preco {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 29px;
+}
+
+.saiba_mais,
+.leia_agora {
+  display: block;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.saiba_mais:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.leia_agora:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(139, 22, 22);
+  font-weight: bold;
+}
+
+.destaque_box::-webkit-scrollbar {
+  height: 8px;
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  background-color: #cccccc;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: #d62929;
+}
+
+/* Novidades */
+
+.livros_destaque1 {
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+.livros_destaque1 h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 45px;
+  color: #fff;
+}
+
+.destaque_box1 {
+  width: 95%;
+  height: 580px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 60px 0;
+}
+
+.destaque_card1 {
+  width: 265px;
+  height: 470px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #fff;
+  margin: 20px;
+}
+
+.destaque_card1:hover {
+  box-shadow: 0 0 10px rgb(139, 22, 22);
+}
+
+.destaque_img1 img {
+  align-content: center;
+  width: 250px;
+  height: 365px;
+}
+
+.destaque_tag1 h2 {
+  margin: 2px;
+  color: #fff;
+}
+
+.destaque_tag1 .escritor {
+  color: gray;
+}
+
+.destaque_tag1 .categorias {
+  color: rgb(139, 22, 22);
+  padding-bottom: 60px;
+}
+
+.destaque_tag1 .destaque_preco {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 29px;
+}
+
+.saiba_mais {
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.saiba_mais:hover {
+  padding: 8px 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(139, 22, 22);
+  font-weight: bold;
+}
+
+.leia_agora {
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.leia_agora:hover {
+  padding: 8px 20px;
+  border: 2px solid rgb(139, 22, 22);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(139, 22, 22);
+  font-weight: bold;
+}
+
+.destaque_box::-webkit-scrollbar {
+  height: 8px;
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  background-color: #cccccc;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: #d62929;
+}
+
+/* autores */
+
+.autores {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+.autores h1 {
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  font-size: 35px;
+  color: #fff;
+}
+
+.autores_box {
+  width: 100%;
+  height: 450px;
+  margin: 300 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 60px 0;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.autores_card {
+  text-align: center;
+  padding: 5px;
+  border: 1px #fff;
+  margin: 20px;
+  border-radius: 100%;
+}
+
+.autores_img img {
+  align-content: center;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+
+.autores_img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s;
+  cursor: pointer;
+}
+.destaque_tag1 h2 {
+  margin: 2px;
+  color: #fff;
+}
+
+.autores .escritor {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.autores_box::-webkit-scrollbar {
+  height: 8px;
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.autores_box::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #cccccc;
+}
+
+.autores_box::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: #d62929;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/CSS/styleRegister.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Oswald&family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header fixed">
+      <a href="/HTML/index.html">
+        <img src="/imagens/Icone.png" alt="Ícone Livroflix" id="icon" />
+      </a>
+    </header>
+    <main class="cadastramento">
+      <section class="passos-container">
+        <div class="passo ativo" id="passo1"></div>
+        <div class="passo" id="passo2"></div>
+        <div class="passo" id="passo3"></div>
+      </section>
+      <form id="formulario">
+        <div class="todosPassos">
+          <div class="passo1">
+            <div class="tituloDoPasso">
+              <h2>Me fala mais de você...</h2>
+            </div>
+            <div class="subtituloDoPasso">
+              <p id="lembrete">Lembrando que já conheço teu nome e e-mail!</p>
+            </div>
+            <div class="passobox">
+              <label for="dataNascimento">Data de Nascimento:</label>
+              <input
+                type="date"
+                id="dataNascimento"
+                name="dataNascimento"
+                required
+              /><br />
+              <label for="endereco">Endereço:</label>
+              <input
+                type="text"
+                id="endereco"
+                name="endereco"
+                placeholder="Rua Exemplo, Número 123, Bairro Exemplo"
+                required
+              /><br />
+              <label for="telefone">Telefone:</label>
+              <input
+                type="text"
+                name="telefone"
+                id="telefone"
+                placeholder="(__) _____-____"
+              /><br />
+              <label for="newPassword">Senha</label>
+              <input type="password" id="newPassword" />
+              <label for="newPassword">Confirme a senha</label>
+              <input type="password" id="newPassword" />
+            </div>
+          </div>
+          <div class="passo2">
+            <div class="tituloDoPasso">
+              <h2>Agora me diz tua escolha de plano...</h2>
+            </div>
+            <div class="passobox">
+              <div class="quadroDePlanos">
+                <ul class="itensDoPlano">
+                  <div class="itemDoPlano">
+                    <li class="perfilDePlanos">
+                      Plano Básico <br />
+                      (R$9,99/mês) <br />
+                      <p><br /></p>
+
+                      Até 1 Livro/mês <br />
+                      1 perfil
+                      <p><br /></p>
+                    </li>
+                  </div>
+                  <div class="itemDoPlano">
+                    <li class="perfilDePlanos">
+                      Plano Padrão <br />
+                      (R$14,99/mês) <br />
+                      <p><br /></p>
+
+                      Até 3 Livro/mês <br />
+                      2 perfies
+                      <p><br /></p>
+                    </li>
+                  </div>
+                  <div class="itemDoPlano">
+                    <li class="perfilDePlanos">
+                      Plano Premium <br />(R$19,99/mês) <br />
+                      <p><br /></p>
+                      Livros Ilimitados <br />
+                      Acesso offline <br />
+                      4 perfies
+                    </li>
+                  </div>
+                  <div class="itemDoPlano">
+                    <li class="perfilDePlanos">
+                      Plano Familiar <br />(R$24,99/mês)
+                      <p><br /></p>
+                      Livros Ilimitados <br />
+                      Acesso offline <br />
+                      6 perfies
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <br />
+            </div>
+          </div>
+          <div class="passo3">
+            <div class="tituloDoPasso">
+              <h2>Finalmente, hora dos dados de pagamento?</h2>
+            </div>
+            <div class="passobox">
+              <label for="nome">Nome no Cartão:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Jubileu da Cunha"
+                required
+              /><br />
+              <label for="cpf">CPF:</label>
+              <input
+                type="text"
+                name="cpf"
+                id="cpf"
+                placeholder="___.___.___-__"
+                required
+              /><br />
+              <label for="numero">Número do Cartão:</label>
+              <input
+                type="text"
+                id="numero"
+                name="numero"
+                placeholder="XXXX.XXXX.XXX.XXXX"
+                required
+              /><br />
+              <label for="validade">Validade:</label>
+              <input
+                type="text"
+                id="validade"
+                name="validade"
+                placeholder="MM/AA"
+                required
+              />
+
+              <label for="cvv">CVV:</label>
+              <input
+                type="text"
+                id="cvv"
+                name="cvv"
+                placeholder="XXX"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="aviso">
+          <p id="aviso">
+            * Por favor, verifique as informações antes de avançar!
+          </p>
+        </div>
+      </form>
+      <div class="buttons">
+        <button id="anterior" style="display: none">Anterior</button>
+        <button id="proximo">Próximo</button>
+        <button style="display: none" id="concluir">
+          <a href="/HTML/index.html" id="proximo" class="button">Concluir</a>
+        </button>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Sua plataforma de leitura sem limites</p>
+    </footer>
+    <script src="/scriptCobranca.js"></script>
+  </body>
+</html>

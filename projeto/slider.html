@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livroflix</title>
+    <link rel="stylesheet" href="/projeto/slider.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="catalogo.js" defer></script>
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Oswald&family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="/projeto/imagens/LIVROFLIX.png" alt="Ícone Livroflix" id="icon" />
+      <div>
+        <ul class="header-buttons">
+          <a href="/HTML/index.html" id="logOut">
+            <li>Sair</li>
+          </a>
+        </ul>
+      </div>
+    </header>
+
+    <div class="slider">
+      <div class="slider-content">
+        <input type="radio" name="btn-radio" id="radio1" />
+        <input type="radio" name="btn-radio" id="radio2" />
+        <input type="radio" name="btn-radio" id="radio3" />
+
+        <div class="slide-box primeiro">
+          <img class="img-desktop" src="/projeto/imagens/banner1.jpg" alt="slide 1" />
+          <img class="img-mobile" src="slide-1-mob.jpg" alt="slide 1" />
+        </div>
+
+        <div class="slide-box">
+          <img class="img-desktop" src="/projeto/imagens/Banner3.jpg" alt="slide 3" />
+          <img class="img-mobile" src="slide-2-mob.jpg" alt="slide 1" />
+        </div>
+
+        <div class="slide-box">
+          <img class="img-desktop" src="/projeto/imagens/banner2.png" alt="slide 3" />
+          <img class="img-mobile" src="slide-3-mob.jpg" alt="slide 3" />
+        </div>
+
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+
+        <div class="nav-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-pesquisa">
+      <h1 class="titulo-sessao">Encontre Seus Títulos Preferidos...</h1>
+      <button id="button">Buscar</button>
+      <input type="text" id="input-de-pesquisar" placeholder="Digite aqui o título de seu interesse..." />
+    </div>
+
+    <!--Destaques-->
+    <section class="grandes_destaques">
+        <div class="livros_destaque">
+            <h1>Livros em Destaque</h1>
+      
+            <div class="destaque_box">
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa1.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Água Viva</h3>
+                  <p class="escritor">Clarice Lispector</p>
+                  <div class="categorias">Romance, Psicológico, Nacional</div>
+      
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa2.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Pequena Coreografia do...</h3>
+                  <p class="escritor">Aline Bei</p>
+                  <div class="categorias">Romance, Psicológico, Nacional</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa3.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>A redoma de vidro</h3>
+                  <p class="escritor">Silvia Plath</p>
+                  <div class="categorias">Romance</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa4.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>A Menina que roubava...</h3>
+                  <p class="escritor">Markus Zusak</p>
+                  <div class="categorias">Romance, Drama</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa5.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>As vantagens de ser...</h3>
+                  <p class="escritor">Stephen Chboki</p>
+                  <div class="categorias">Romance, Jovem Adulto</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa6.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>A Rainha Vermelha</h3>
+                  <p class="escritor">Victoria Aveyard</p>
+                  <div class="categorias">Romance, Literatura fantástica</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa7.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Como eu era antes de você</h3>
+                  <p class="escritor">Jojo Mayes</p>
+                  <div class="categorias">Romance, </div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa8.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Como fazer amigos e...</h3>
+                  <p class="escritor">Dale Carnegier</p>
+                  <div class="categorias">Auto-ajuda</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa9.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Conversa entre amigos</h3>
+                  <p class="escritor">Sally Rooney</p>
+                  <div class="categorias">Romance, Jovem-Adulto</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa10.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Lobo de Rua</h3>
+                  <p class="escritor">Jana P. Bianchi</p>
+                  <div class="categorias">Romance, Psicológico, Nacional</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa11.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Enquanto eles não vem</h3>
+                  <p class="escritor">Robson Gundin</p>
+                  <div class="categorias">Romance, Ficção</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa12.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Pinóquio no país...</h3>
+                  <p class="escritor">Clarice Lispector</p>
+                  <div class="categorias">Lógica</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa13.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Histórias extraordinárias</h3>
+                  <p class="escritor">Edgar Allan Poe</p>
+                  <div class="categorias">Terror</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!--Novidades-->
+    <section class="grandes_novidades">
+        <div class="livros_destaque">
+            <h1>Novidades da Semana</h1>
+      
+            <div class="destaque_box">
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa14.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Biblioteca Invisivel</h3>
+                  <p class="escritor">Genevive Cogman</p>
+                  <div class="categorias">Romance</div>
+      
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa15.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>O corvo</h3>
+                  <p class="escritor">Edgar Allan Poe</p>
+                  <div class="categorias">Romance, Psicológico, Nacional</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa16.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Meu corpo virou poesia</h3>
+                  <p class="escritor">Bruna Vieira</p>
+                  <div class="categorias">Poesia</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa17.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Redoma de Vidro</h3>
+                  <p class="escritor">Silvia Plath</p>
+                  <div class="categorias">Romance, Psicológico, Nacional</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa18.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Pequena Coreografia do...</h3>
+                  <p class="escritor">Clarice Lispector</p>
+                  <div class="categorias">Romance, Psicológico, Nacional</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa19.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>O livro do riso e do...</h3>
+                  <p class="escritor">Milan Kundera</p>
+                  <div class="categorias">Romance</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa20.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Tudo sobre o amor</h3>
+                  <p class="escritor">Bell Hooks</p>
+                  <div class="categorias">Romance, Psicológico, Nacional</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa22.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Por que amamos   </h3>
+                  <p class="escritor">Renato Noguera</p>
+                  <div class="categorias">Romance, Psicológico, Nacional</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa23.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Corte de espinhos e rosas</h3>
+                  <p class="escritor">Sarah J. Maas</p>
+                  <div class="categorias">Romance, Psicológico, Nacional</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+              <div class="destaque_card">
+                <div class="destaque_img">
+                  <img src="imagens/capa24.jpg" alt="capa 1" />
+                </div>
+      
+                <div class="destaque_tag">
+                  <h3>Vermelho, Branco...</h3>
+                  <p class="escritor">Clarice Lispector</p>
+                  <div class="categorias">Romance, Psicológico, Nacional</div>
+                  <a href="#" class="leia_agora">Leia Agora</a>
+                  <a href="#" class="saiba_mais">Saiba Mais</a>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+    </section>
+    <!-- Autores -->
+    <section class="section-autores">
+        <div class="autores">
+            <h1>Buscar por autores</h1>
+        <div class="autores_box">
+            <div class="autores_card">
+              <div class="autores_img">
+                <img src="imagens/matt-haig.png" alt="capa 1" />
+              </div>
+              <p class="escritor">Matt Haig</p>
+            </div>
+    
+            <div class="autores_card">
+              <div class="autores_img">
+                <img src="imagens/collen-hoover.png" alt="capa 1" />
+              </div>
+              <p class="escritor">Collen Hoover</p>
+            </div>
+    
+            <div class="autores_card">
+              <div class="autores_img">
+                <img src="imagens/djamilla-ribeiro.png" alt="capa 1" />
+              </div>
+              <p class="escritor">Djamilla Ribeiror</p>
+            </div>
+    
+            <div class="autores_card">
+              <div class="autores_img">
+                <img src="imagens/bell-hooks.png" alt="capa 1" />
+              </div>
+              <p class="escritor">Bell Hooks</p>
+            </div>
+    
+            <div class="autores_card">
+              <div class="autores_img">
+                <img src="imagens/casey-mcquiston.png" alt="capa 1" />
+              </div>
+              <p class="escritor">Casey McQuiston</p>
+            </div>
+
+          </div>
+    </section>
+    </div>
+  </body>
+</html>

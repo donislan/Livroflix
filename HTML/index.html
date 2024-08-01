@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livroflix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Oswald&family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header fixed">
+      <img src="/imagens/Icone.png" alt="Ícone Livroflix" id="icon" />
+      <div>
+        <ul class="header-buttons">
+          <li id="showAbout">Sobre</li>
+          <li id="tablePlan">Planos</li>
+          <li id="botaoFaleConosco">Fale Conosco</li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="behind" id="textBox">
+        <section class="sectionAbout">
+          <h1>
+            Descubra o Futuro da Leitura: Livroflix - O Netflix dos Livros
+          </h1>
+          <br />
+          <br />
+          <p>
+            No mundo moderno, a tecnologia transformou a maneira como consumimos
+            entretenimento. A Netflix revolucionou a forma como assistimos a
+            filmes e séries, proporcionando acesso a uma vasta biblioteca de
+            conteúdo a qualquer momento e em qualquer lugar. E agora, a leitura
+            está prestes a seguir o mesmo caminho, graças ao Livroflix, o
+            serviço de streaming de livros que está redefinindo a forma como nos
+            relacionamos com a literatura.
+          </p>
+          <br />
+          <p>
+            Imagine ter um universo de livros ao alcance dos seus dedos, à
+            semelhança da vasta coleção da Netflix, e ser capaz de explorar,
+            descobrir e desfrutar de histórias emocionantes, conhecimento
+            inspirador e aventuras emocionantes sempre que quiser. O Livroflix
+            oferece exatamente isso e muito mais. Com uma biblioteca virtual de
+            milhares de títulos, você poderá mergulhar em diferentes gêneros,
+            explorar novos autores e descobrir joias literárias escondidas, tudo
+            a partir do conforto do seu dispositivo preferido.
+          </p>
+          <br />
+          <p>
+            O Livroflix não é apenas uma biblioteca digital, mas um guia
+            literário pessoal. Com base nas suas preferências de leitura,
+            histórico de leitura e avaliações, nossa plataforma utiliza
+            algoritmos inteligentes para fornecer recomendações sob medida.
+            Assim como a Netflix sugere filmes e séries com base no que você
+            assistiu, nós sugerimos livros que você adorará, garantindo que sua
+            próxima leitura seja sempre uma experiência gratificante.
+          </p>
+          <br />
+          <p>
+            Nosso serviço é acessível em uma variedade de dispositivos, desde
+            smartphones e tablets até computadores e e-readers. Leve sua
+            biblioteca pessoal para onde você for, seja durante uma viagem, em
+            uma pausa para o café ou na sala de espera do médico. Sua próxima
+            aventura literária está a apenas alguns cliques de distância.
+          </p>
+          <br />
+          <p>
+            O Livroflix oferece uma variedade de planos de assinatura
+            acessíveis, para que você possa escolher o que melhor se adapta ao
+            seu orçamento e necessidades. Diga adeus aos gastos excessivos em
+            livros individuais e abrace a simplicidade de uma assinatura mensal
+            que lhe dá acesso ilimitado a nossa coleção em constante
+            crescimento.
+          </p>
+          <br />
+          <p>
+            Com o Livroflix, a leitura nunca mais será a mesma. Explore um mundo
+            de possibilidades literárias, desfrute de recomendações inteligentes
+            e mergulhe em histórias emocionantes de maneira conveniente e
+            acessível. Junte-se à revolução da leitura e experimente o Livroflix
+            hoje para descobrir como a literatura pode ser ainda mais
+            envolvente, acessível e emocionante no século 21.
+          </p>
+          <p>
+            Não perca mais tempo. Seu próximo livro favorito está a apenas um
+            clique de distância.
+          </p>
+          <br />
+        </section>
+      </div>
+
+      <!-- Página de Login-->
+      <section class="sectionLogin" id="paginaDeLogin">
+        <div class="login-container" id="loginRegisterBox">
+          <div class="login">
+            <h1>Login</h1>
+            <form>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" />
+              <label for="password">Senha</label>
+              <input type="password" id="password" />
+              <button id="loginButton">
+                <a href="/HTML/profiles.html">Entrar</a>
+              </button>
+            </form>
+            <p class="textLoginBox">
+              Ainda não é membro? <a href="#" id="registerLink">Assine Já!</a>
+            </p>
+          </div>
+          <div class="register">
+            <h1>Cadastre-se</h1>
+            <form>
+              <label for="name">Nome Completo</label>
+              <input type="text" id="name" />
+              <label for="newEmail">E-mail</label>
+              <input type="email" id="newEmail" />
+              <button id="registerButton">
+                <a href="/HTML/registerStep2.html">Cadastrar</a>
+              </button>
+            </form>
+            <p class="textLoginBox">
+              Já é membro? <a href="#" id="loginLink">Faça login</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tela inicial -->
+      <section class="inicioCentral" id="telaInicial">
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <p class="text" id="texto-responsivo">
+              Explore novos mundos a cada mês com nossa assinatura de livros.
+              Descubra histórias emocionantes que o transportarão para lugares
+              inimagináveis.
+            </p>
+          </div>
+          <div class="slide fade">
+            <p class="text" id="texto-responsivo">
+              Simplifique sua busca pelos melhores livros. Nossa assinatura traz
+              os tesouros da literatura diretamente à sua porta, comodamente e a
+              preços acessíveis.
+            </p>
+          </div>
+          <div class="slide fade">
+            <p class="text" id="texto-responsivo">
+              Junte-se à nossa comunidade de leitores apaixonados. Cada caixa é
+              uma surpresa literária cuidadosamente selecionada para satisfazer
+              sua sede de histórias cativantes.
+            </p>
+          </div>
+        </div>
+        <div class="inicioButton">
+          <button id="iniciarSessaoButton">Iniciar Sessão</button>
+        </div>
+        <div>
+          <img
+            class="arrowDetalhe"
+            src="/imagens/BannerInicial.jpg"
+            alt="arrow"
+            height="20px"
+            width="20px"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!--Novidades-->
+    <section class="grandes_novidades">
+      <div class="livros_destaque">
+        <h1>Conheça Outros Títulos Disponíveis...</h1>
+
+        <div class="destaque_box">
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa1.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p href="#">
+                <a href="#" id="registerLinkDestaque">Assine Já!</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa2.jpg" alt="capa 2" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa3.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa4.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa5.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa6.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa7.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa8.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa9.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa10.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa11.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa12.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+
+          <div class="destaque_card">
+            <div class="destaque_img">
+              <img src="/imagens/Capas/capa13.jpg" alt="capa 1" />
+            </div>
+
+            <div class="destaque_tag">
+              <h3>Disponível para assinantes</h3>
+              <p><a href="#" id="registerLinkDestaque">Assine Já!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dispositvos">
+      <div class="conteudoDispositivos">
+        <h2 class="tituloDispositivos">Todo o conteúdo disponível</h2>
+        <h2 class="tituloDispositivos">A qualquer hora e em qualquer tela!</h2>
+        <img
+          src="/imagens/BannerLocais.png"
+          alt="Dispositivos-Compatíveis"
+          id="imagemDispositivo"
+        />
+        <p class="avisoDispositivos">
+          *A disponibilidade do conteúdo pode variar de dispositivo para
+          dispositivo de acordo com o plano assinado.
+        </p>
+      </div>
+    </section>
+    <h1 class="tituloTabela" id="plans">O Melhor Plano Para Você</h1>
+    <div class="plansZone">
+      <section class="planos">
+        <table class="tabelaDePlanos">
+          <tr class="tituloColuna">
+            <th>Plano</th>
+            <th>Preço Mensal</th>
+            <th>Número de Livros</th>
+            <th>Acesso Offline</th>
+            <th>Perfil de Usuário</th>
+            <th>Avaliação Gratuita</th>
+          </tr>
+          <tr class="tituloColuna">
+            <td>Plano Básico</td>
+            <td>R$ 9,99/mês</td>
+            <td>Até 1 livro/mês</td>
+            <td>Não</td>
+            <td>1</td>
+            <td>7 dias</td>
+          </tr>
+          <tr class="tituloColuna">
+            <td>Plano Padrão</td>
+            <td>R$ 14,99/mês</td>
+            <td>Até 3 livros/mês</td>
+            <td>Sim</td>
+            <td>2</td>
+            <td>14 dias</td>
+          </tr>
+          <tr class="tituloColuna">
+            <td>Plano Premium</td>
+            <td>R$ 19,99/mês</td>
+            <td>Livros ilimitados</td>
+            <td>Sim</td>
+            <td>4</td>
+            <td>30 dias</td>
+          </tr>
+          <tr class="tituloColuna">
+            <td>Plano Familiar</td>
+            <td>R$ 24,99/mês</td>
+            <td>Livros ilimitados</td>
+            <td>Sim</td>
+            <td>6 (perfis individuais)</td>
+            <td>30 dias</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <footer class="footer">
+      <h3>Sua plataforma de leitura sem limites!</h3>
+      <br />
+      <h1 id="faleCosnosco">Fale Conosco</h1>
+
+      <p>
+        Você tem alguma pergunta, comentário ou sugestão? Estamos aqui para
+        ajudar. Entre em contato conosco e teremos o prazer de atender suas
+        necessidades. Sua opinião é importante para nós.
+      </p>
+      <br />
+      <h2>Informações de Contato</h2>
+      <br />
+      <p><strong>Telefone:</strong> (099) 9.9999-9999</p>
+      <p><strong>E-mail:</strong> livroflix@inexistente.com</p>
+      <br />
+
+      <h2>Redes Sociais</h2>
+      <p>
+        Você também pode nos encontrar nas redes sociais. Siga-nos para receber
+        as últimas atualizações, notícias e promoções especiais.
+      </p>
+      <br />
+      <ul class="social-icons">
+        <li>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+      <br />
+      <p>
+        Estamos ansiosos para ouvir de você e atender às suas necessidades. Sua
+        satisfação é a nossa prioridade.
+      </p>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
