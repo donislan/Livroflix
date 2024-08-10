@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livroflix</title>
+    <link rel="stylesheet" href="../CSS/catalog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Oswald&family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="../imagens/logo1.png" alt="Ícone Livroflix" id="icon" />
+      <div>
+        <ul class="header-buttons">
+          <a href="../index.html" id="logOut">
+            <li>Sair</li>
+          </a>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Slide das principais chamadas na tela-->
+      <article class="slider">
+        <section class="slider-content">
+          <input type="radio" name="btn-radio" id="radio1" />
+          <input type="radio" name="btn-radio" id="radio2" />
+          <input type="radio" name="btn-radio" id="radio3" />
+  
+          <div class="slide-box primeiro">
+            <img class="img-desktop" src="../imagens/banners/banner1.jpg" alt="slide 1" />
+          </div>
+  
+          <div class="slide-box">
+            <img class="img-desktop" src="../imagens/banners/banner2.png" alt="slide 3" />
+          </div>
+  
+          <div class="slide-box">
+            <img class="img-desktop" src="../imagens/banners/banner3.jpg" alt="slide 3" />
+          </div>
+  
+          <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+  
+          <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+          </div>
+        </section>
+      </article>
+
+      <!-- Container de busca-->
+      <article class="container-search">
+        <h1 class="title-session">Encontre Seus Títulos Preferidos...</h1>
+        <button id="button">Buscar</button>
+        <input type="text" id="input-search" placeholder="Digite aqui o título de seu interesse..." />
+      </article>
+
+      <!--Destaques-->
+      <article class="big-emphasis">
+      <section class="emphasis-books">
+          <h1>Destaques</h1>
+    
+          <figure class="emphasis-boxs">
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa1.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Água Viva</h3>
+                <p class="writher">Clarice Lispector</p>
+                <div class="categorys">Romance, Psicológico, Nacional</div>
+    
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa2.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Pequena Coreografia do...</h3>
+                <p class="writher">Aline Bei</p>
+                <div class="categorys">Romance, Psicológico, Nacional</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa3.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>A redoma de vidro</h3>
+                <p class="writher">Silvia Plath</p>
+                <div class="categorys">Romance</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa4.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>A Menina que roubava...</h3>
+                <p class="writher">Markus Zusak</p>
+                <div class="categorys">Romance, Drama</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa5.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>As vantagens de ser...</h3>
+                <p class="writher">Stephen Chboki</p>
+                <div class="categorys">Romance, Jovem Adulto</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa6.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>A Rainha Vermelha</h3>
+                <p class="writher">Victoria Aveyard</p>
+                <div class="categorys">Romance, Literatura fantástica</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa7.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Como eu era antes de você</h3>
+                <p class="writher">Jojo Mayes</p>
+                <div class="categorys">Romance, </div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa8.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Como fazer amigos e...</h3>
+                <p class="writher">Dale Carnegier</p>
+                <div class="categorys">Auto-ajuda</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa9.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Conversa entre amigos</h3>
+                <p class="writher">Sally Rooney</p>
+                <div class="categorys">Romance, Jovem-Adulto</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa10.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Lobo de Rua</h3>
+                <p class="writher">Jana P. Bianchi</p>
+                <div class="categorys">Romance, Psicológico, Nacional</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa11.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Enquanto eles não vem</h3>
+                <p class="writher">Robson Gundin</p>
+                <div class="categorys">Romance, Ficção</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa12.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Pinóquio no país...</h3>
+                <p class="writher">Clarice Lispector</p>
+                <div class="categorys">Lógica</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa13.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Histórias extraordinárias</h3>
+                <p class="writher">Edgar Allan Poe</p>
+                <div class="categorys">Terror</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+          </figure>
+        </section>
+      </article>
+
+      <!--Novidades-->
+      <article class="big-news">
+      <div class="emphasis-books">
+          <h1>Novidades</h1>
+    
+          <div class="emphasis-boxs">
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa14.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Biblioteca Invisivel</h3>
+                <p class="writher">Genevive Cogman</p>
+                <div class="categorys">Romance</div>
+    
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa15.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>O corvo</h3>
+                <p class="writher">Edgar Allan Poe</p>
+                <div class="categorys">Romance, Psicológico, Nacional</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa16.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Meu corpo virou poesia</h3>
+                <p class="writher">Bruna Vieira</p>
+                <div class="categorys">Poesia</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa17.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Redoma de Vidro</h3>
+                <p class="writher">Silvia Plath</p>
+                <div class="categorys">Romance, Psicológico, Nacional</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa18.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Pequena Coreografia do...</h3>
+                <p class="writher">Clarice Lispector</p>
+                <div class="categorys">Romance, Psicológico, Nacional</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa19.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>O livro do riso e do...</h3>
+                <p class="writher">Milan Kundera</p>
+                <div class="categorys">Romance</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa20.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Tudo sobre o amor</h3>
+                <p class="writher">Bell Hooks</p>
+                <div class="categorys">Romance, Psicológico, Nacional</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa22.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Por que amamos   </h3>
+                <p class="writher">Renato Noguera</p>
+                <div class="categorys">Romance, Psicológico, Nacional</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa23.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Corte de espinhos e rosas</h3>
+                <p class="writher">Sarah J. Maas</p>
+                <div class="categorys">Romance, Psicológico, Nacional</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+            <div class="emphasis-card">
+              <div class="emphasis-img">
+                <img src="../imagens/capas-sessao-interna/capa24.jpg" alt="capa do livro" />
+              </div>
+    
+              <div class="emphasis-tag">
+                <h3>Vermelho, Branco...</h3>
+                <p class="writher">Clarice Lispector</p>
+                <div class="categorys">Romance, Psicológico, Nacional</div>
+                <a href="#" class="btn-read-now">Leia Agora</a>
+                <a href="#" class="btn-know-more">Saiba Mais</a>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </article>
+
+      <!-- Autores -->
+      <section class="session-autors">
+      <div class="autors">
+          <h1>Autores</h1>
+      <div class="autors_box">
+          <div class="autors_card">
+            <div class="autors_img">
+              <img src="../imagens/autores/autor1.png" alt="foto dos autores" />
+            </div>
+            <p class="writher">Matt Haig</p>
+          </div>
+  
+          <div class="autors_card">
+            <div class="autors_img">
+              <img src="../imagens/autores/autor2.png" alt="foto dos autores" />
+            </div>
+            <p class="writher">Collen Hoover</p>
+          </div>
+  
+          <div class="autors_card">
+            <div class="autors_img">
+              <img src="../imagens/autores/autor3.png" alt="foto dos autores" />
+            </div>
+            <p class="writher">Djamilla Ribeiror</p>
+          </div>
+  
+          <div class="autors_card">
+            <div class="autors_img">
+              <img src="../imagens/autores/autor4.png" alt="foto dos autores" />
+            </div>
+            <p class="writher">Bell Hooks</p>
+          </div>
+  
+          <div class="autors_card">
+            <div class="autors_img">
+              <img src="../imagens/autores/autor5.png" alt="foto dos autores" />
+            </div>
+            <p class="writher">Casey McQuiston</p>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <script src="../JS/catalogo.js" defer></script>
+    <script src="../JS/script.js"></script>
+  </body>
+</html>
