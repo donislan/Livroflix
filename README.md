@@ -1,1 +1,3 @@
 O projeto "Livroflix" foi desenvolvido em grupo na faculdade, inspirado na Netflix, com o objetivo de criar uma plataforma de streaming de livros digitais. O projeto sugerido pelo professor tratava-se de qualquer aplicação web com obrigatoriedade do uso das tecnológias HTML5 e CSS3, podendo extender ao uso de JavaScript, entretanto não podemos utilizar "facilitadores de código", como SASS, BOOTSTRAP ou React, por exemplo.
+
+Dentre as obrigatoriedades do projeto, precisariamos apresentar uma página sobre, uma página de "contatos", uso de tabelas, listas e conter no minimo cinco páginas de apresentação.
