@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagamento</title>
+    <title>Registro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="/CSS/styleRegister.css" />
+    <link rel="stylesheet" href="/CSS/register.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Oswald&family=Oxanium:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -26,22 +26,23 @@
         <img src="/imagens/Icone.png" alt="Ícone Livroflix" id="icon" />
       </a>
     </header>
-    <main class="cadastramento">
-      <section class="passos-container">
-        <div class="passo ativo" id="passo1"></div>
-        <div class="passo" id="passo2"></div>
-        <div class="passo" id="passo3"></div>
+
+    <main class="register">
+      <section class="container-steps">
+        <div class="step ativo" id="step1"></div>
+        <div class="step" id="step2"></div>
+        <div class="step" id="step3"></div>
       </section>
-      <form id="formulario">
-        <div class="todosPassos">
-          <div class="passo1">
-            <div class="tituloDoPasso">
+      <form id="form">
+        <div class="all-steps">
+          <div class="step1">
+            <div class="title-steps">
               <h2>Me fala mais de você...</h2>
             </div>
-            <div class="subtituloDoPasso">
-              <p id="lembrete">Lembrando que já conheço teu nome e e-mail!</p>
+            <div class="subtitle-steps">
+              <p id="remeber">Lembrando que já conheço teu nome e e-mail!</p>
             </div>
-            <div class="passobox">
+            <div class="step-box">
               <label for="dataNascimento">Data de Nascimento:</label>
               <input
                 type="date"
@@ -70,15 +71,15 @@
               <input type="password" id="newPassword" />
             </div>
           </div>
-          <div class="passo2">
-            <div class="tituloDoPasso">
+          <div class="step2">
+            <div class="title-steps">
               <h2>Agora me diz tua escolha de plano...</h2>
             </div>
-            <div class="passobox">
-              <div class="quadroDePlanos">
-                <ul class="itensDoPlano">
-                  <div class="itemDoPlano">
-                    <li class="perfilDePlanos">
+            <div class="step-box">
+              <div class="plans">
+                <ul class="itens-plans">
+                  <div class="iten-plan">
+                    <li class="profile-plan">
                       Plano Básico <br />
                       (R$9,99/mês) <br />
                       <p><br /></p>
@@ -89,7 +90,7 @@
                     </li>
                   </div>
                   <div class="itemDoPlano">
-                    <li class="perfilDePlanos">
+                    <li class="profile-plan">
                       Plano Padrão <br />
                       (R$14,99/mês) <br />
                       <p><br /></p>
@@ -100,7 +101,7 @@
                     </li>
                   </div>
                   <div class="itemDoPlano">
-                    <li class="perfilDePlanos">
+                    <li class="profile-plan">
                       Plano Premium <br />(R$19,99/mês) <br />
                       <p><br /></p>
                       Livros Ilimitados <br />
@@ -109,7 +110,7 @@
                     </li>
                   </div>
                   <div class="itemDoPlano">
-                    <li class="perfilDePlanos">
+                    <li class="profile-plan">
                       Plano Familiar <br />(R$24,99/mês)
                       <p><br /></p>
                       Livros Ilimitados <br />
@@ -122,11 +123,11 @@
               <br />
             </div>
           </div>
-          <div class="passo3">
-            <div class="tituloDoPasso">
+          <div class="step3">
+            <div class="title-steps">
               <h2>Finalmente, hora dos dados de pagamento?</h2>
             </div>
-            <div class="passobox">
+            <div class="step-box">
               <label for="nome">Nome no Cartão:</label>
               <input
                 type="text"
@@ -171,23 +172,23 @@
             </div>
           </div>
         </div>
-        <div class="aviso">
-          <p id="aviso">
+        <div class="warning">
+          <p id="warning">
             * Por favor, verifique as informações antes de avançar!
           </p>
         </div>
       </form>
       <div class="buttons">
-        <button id="anterior" style="display: none">Anterior</button>
-        <button id="proximo">Próximo</button>
-        <button style="display: none" id="concluir">
-          <a href="../index.html" id="proximo" class="button">Concluir</a>
+        <button id="last" style="display: none">Anterior</button>
+        <button id="next">Próximo</button>
+        <button style="display: none" id="finish">
+          <a href="../index.html" id="next" class="button">finish</a>
         </button>
       </div>
     </main>
     <footer class="footer">
       <p>Sua plataforma de leitura sem limites</p>
     </footer>
-    <script src="../JS/scriptCobranca.js"></script>
+    <script src="../JS/register.js"></script>
   </body>
 </html>

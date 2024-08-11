@@ -1,9 +1,9 @@
-const passo1 = document.querySelector(".passo1");
-const passo2 = document.querySelector(".passo2");
-const passo3 = document.querySelector(".passo3");
-const anteriorBotao = document.getElementById("anterior");
-const proximoBotao = document.getElementById("proximo");
-const concluirBotao = document.getElementById("concluir");
+const passo1 = document.querySelector(".step1");
+const passo2 = document.querySelector(".step2");
+const passo3 = document.querySelector(".step3");
+const anteriorBotao = document.getElementById("last");
+const proximoBotao = document.getElementById("next");
+const concluirBotao = document.getElementById("finish");
 
 let passoAtual = 1;
 
