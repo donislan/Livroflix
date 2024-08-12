@@ -117,7 +117,7 @@ button {
   margin: 1rem 0 1rem 0;
 }
 
-.textLoginBox {
+.text-login-box {
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -132,17 +132,17 @@ a:visited {
   color: #fff;
 }
 
-#loginButton {
+#btn-login {
   text-decoration: none;
   color: rgb(139, 22, 22);
 }
 
-#loginButton:visited {
+#btn-login:visited {
   text-decoration: none;
   color: rgb(139, 22, 22);
 }
 
-.sectionAbout {
+.section-about {
   position: absolute;
   top: -100%;
   left: 0;
@@ -196,12 +196,12 @@ a:visited {
   border-radius: 40px;
 }
 
-.arrowDetalhe {
+.arrow-ditals {
   margin-top: 500px;
   position: absolute;
 }
 
-.inicioCentral {
+.first-central {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,19 +210,19 @@ a:visited {
   margin-bottom: 45vh;
 }
 
-.inicioButton {
+.btn-begging {
   position: absolute;
   margin-top: 400px;
 }
 
-#iniciarSessaoButton {
+#btn-start-session {
   padding: 1rem 3rem 1rem 3rem;
   font-size: 2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-#iniciarSessaoButton:hover {
+#btn-start-session:hover {
   transform: scale(1.1);
 }
 
@@ -248,15 +248,9 @@ a:visited {
   }
 }
 
-.backgroundImage {
-  position: relative;
-  z-index: 2;
-  background-image: url(/imagens/BackgroundImage/colecao-abundante-de-livros-antigos-em-prateleiras-de-madeira-geradas-por-ia_188544-29660.avif);
-}
-
 /* destaques */
 
-.livros_destaque {
+.books-in-emphasis {
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
@@ -264,7 +258,7 @@ a:visited {
   background-color: rgb(139, 22, 22);
 }
 
-.livros_destaque h1 {
+.books-in-emphasis h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -274,7 +268,7 @@ a:visited {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.destaque_box {
+.box-in-emphasis {
   width: 90%;
   height: 550px;
   margin: 0 auto;
@@ -285,7 +279,7 @@ a:visited {
   padding-right: 20px;
 }
 
-.destaque_card {
+.card-in-emphasis {
   width: 265px;
   height: 450px;
   text-align: center;
@@ -296,76 +290,52 @@ a:visited {
   text-align: center;
 }
 
-.destaque_card:hover {
+.card-in-emphasis:hover {
   box-shadow: 0 0 10px #fff;
 }
 
-.destaque_img img {
+.img-in-emphasis img {
   align-content: center;
   width: 250px;
   height: 365px;
 }
 
-.destaque_tag h3 {
+.tag-in-emphasis h3 {
   margin: 2px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.destaque_tag p {
+.tag-in-emphasis p {
   margin: 2px 2px 0 0;
   color: #fff;
   background-color: #fff;
   padding: 0.5rem;
 }
 
-.destaque_tag .escritor {
+.tag-in-emphasis {
   color: #fff;
 }
 
-.destaque_tag .categorias {
+.tag-in-emphasis {
   color: #fff;
 }
 
-.destaque_tag .destaque_preco {
+.tag-in-emphasis {
   color: #fff;
   font-weight: bold;
   padding-bottom: 29px;
 }
 
-.saiba_mais,
-.leia_agora {
-  display: block;
-  padding: 8px 20px;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid transparent;
-}
-
-.saiba_mais:hover {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  background-color: rgb(139, 22, 22);
-  font-weight: bold;
-}
-
-.leia_agora:hover {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  background-color: rgb(139, 22, 22);
-  font-weight: bold;
-}
-
-#registerLinkDestaque {
-  background-color: #fff;
-  color: rgb(139, 22, 22);
+.link-register-in-emphasis {
+  color: rgb(139, 22, 22) !important;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin: 1rem 0 1rem 0;
 }
 
-.destaque_box::-webkit-scrollbar {
+.box-in-emphasis::-webkit-scrollbar {
   height: 8px;
   width: 12px;
   background-color: #f5f5f5;
@@ -382,7 +352,7 @@ a:visited {
   background-color: #d62929;
 }
 
-.dispositvos {
+.divice {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,28 +361,28 @@ a:visited {
   background: linear-gradient(to top, #fff, rgb(139, 22, 22));
 }
 
-.conteudoDispositivos {
+.content-divices {
   text-align: center;
   max-width: 600px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-#imagemDispositivo {
+#img-divice {
   max-width: 100%;
 }
 
-.avisoDispositivos {
+.warning {
   font-size: 12.5px;
   color: #000;
   text-shadow: none;
 }
 
-.plansZone {
+.area-plans {
   background: linear-gradient(to bottom, #fff, rgb(139, 22, 22));
 }
 
-.tituloTabela {
+.table-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -422,7 +392,7 @@ a:visited {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.planos {
+.plans {
   background-color: rgb(180, 76, 76);
   width: 80%;
   display: flex;
@@ -431,12 +401,12 @@ a:visited {
   margin: 2rem 10rem 0 10rem;
 }
 
-.tabelaDePlanos {
+.plans-table {
   border-collapse: none;
   width: 100%;
 }
 
-.planos th {
+.plans th {
   background-color: rgb(139, 22, 22);
   color: #fff;
 }

@@ -1,5 +1,5 @@
-document.getElementById("showAbout").addEventListener("click", function () {
-  var textBox = document.getElementById("textBox");
+document.getElementById("show-about").addEventListener("click", function () {
+  var textBox = document.getElementById("text-box");
   var login = document.querySelector(".login");
 
   if (textBox.style.display === "none" || textBox.style.display === "") {
@@ -11,14 +11,14 @@ document.getElementById("showAbout").addEventListener("click", function () {
     this.innerText = "Sobre";
   }
 
-  var sectionAbout = document.querySelector(".sectionAbout");
+  var sectionAbout = document.querySelector(".section-about");
   sectionAbout.classList.toggle("visible");
 });
 
 document
-  .getElementById("iniciarSessaoButton")
+  .getElementById("btn-start-session")
   .addEventListener("click", function () {
-    var loginRegisterBox = document.getElementById("loginRegisterBox");
+    var loginRegisterBox = document.getElementById("login-register-box");
     var main = document.getElementsByClassName("main")[0];
 
     if (
@@ -32,20 +32,20 @@ document
   });
 
 document
-  .getElementById("iniciarSessaoButton")
+  .getElementById("btn-start-session")
   .addEventListener("click", function () {
-    var telaInicial = document.getElementById("telaInicial");
-    var loginRegisterBox = document.getElementById("paginaDeLogin");
+    var telaInicial = document.getElementById("first-display");
+    var loginRegisterBox = document.getElementById("login-display");
 
-    telaInicial.style.opacity = 0; // Torna a tela inicial transparente
-    telaInicial.style.pointerEvents = "none"; // Desativa os eventos da tela inicial
-    loginRegisterBox.style.top = "0"; // Exibe a seção de login
+    telaInicial.style.opacity = 0;
+    telaInicial.style.pointerEvents = "none"; //
+    loginRegisterBox.style.top = "0";
   });
 
 const login = document.querySelector(".login");
 const register = document.querySelector(".register");
-const loginLink = document.getElementById("loginLink");
-const registerLink = document.getElementById("registerLink");
+const loginLink = document.getElementById("login-link");
+const registerLink = document.getElementById("register-link");
 
 loginLink.addEventListener("click", () => {
   login.style.transform = "rotateY(0deg)";
@@ -58,14 +58,14 @@ registerLink.addEventListener("click", () => {
 });
 
 document
-  .getElementById("botaoFaleConosco")
+  .getElementById("btn-talk-to-us")
   .addEventListener("click", function () {
     document
-      .getElementById("faleCosnosco")
+      .getElementById("talk-to-us")
       .scrollIntoView({ behavior: "smooth" });
   });
 
-document.getElementById("tablePlan").addEventListener("click", function () {
+document.getElementById("table-plan").addEventListener("click", function () {
   document.getElementById("plans").scrollIntoView({ behavior: "smooth" });
 });
 
