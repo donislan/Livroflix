@@ -18,18 +18,16 @@ body {
 
 .profilesHeader img {
   width: 10rem;
-  height: 8rem;
+  height: auto;
 }
 
 .mainprofiles {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
-  padding: 50px;
 }
 
 .iconProfiles {
-  justify-content: space-evenly;
   margin-bottom: 30px;
   font-size: 15px;
   color: #fff;
@@ -45,7 +43,7 @@ body {
 .profileList {
   width: 100%;
   height: 320px;
-  margin: 2rem 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,25 +72,12 @@ body {
   transform: scale(1.1);
 }
 
-.setUpButtons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@media (max-width: 321px) {
+  .iconProfiles h1 {
+    font-size: 1.5rem;
+  }
 
-.buttonSet {
-  border: 2px solid #fff;
-  padding: 1rem;
-  list-style-type: none;
-  cursor: pointer;
-  border-radius: 2rem;
-  color: rgb(139, 22, 22);
-  background-color: #fff;
-  transition: 0.5s;
-  cursor: wait;
-}
-
-.buttonSet:hover {
-  color: white;
-  background-color: rgb(139, 22, 22);
+  img {
+    margin-left: 2rem;
+  }
 }

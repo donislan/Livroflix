@@ -462,3 +462,248 @@ td {
   font-size: 24px;
   color: #fff;
 }
+
+@media (max-width: 769px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-buttons li,
+  .table-title,
+  .area-plans,
+  .text-login-box {
+    display: none;
+  }
+
+  #btn-start-session {
+    font-size: 1rem;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login {
+    width: 18rem;
+    height: auto;
+    margin-left: 3.5rem;
+  }
+
+  .books-in-emphasis h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-buttons li,
+  .table-title,
+  .area-plans,
+  .text-login-box {
+    display: none;
+  }
+
+  #btn-start-session {
+    font-size: 1rem;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login {
+    width: 18rem;
+    height: auto;
+    margin-left: 3.5rem;
+  }
+
+  .books-in-emphasis h1 {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .box-in-emphasis {
+    margin-left: 0;
+    width: auto;
+    height: 17rem;
+  }
+
+  .img-in-emphasis {
+  }
+
+  .card-in-emphasis {
+    border: none;
+  }
+
+  .card-in-emphasis:hover {
+    display: none;
+  }
+
+  .box-in-emphasis img {
+    height: 14rem;
+    width: auto;
+    margin-left: -4rem;
+  }
+
+  .tag-in-emphasis {
+    display: none;
+  }
+
+  .footer {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-buttons li,
+  .table-title,
+  .area-plans,
+  .text-login-box {
+    display: none;
+  }
+
+  #btn-start-session {
+    font-size: 1rem;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login {
+    width: 18rem;
+    height: auto;
+    margin-left: 3.5rem;
+  }
+
+  .books-in-emphasis h1 {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .box-in-emphasis {
+    margin-left: 0;
+    width: auto;
+    height: 17rem;
+  }
+
+  .img-in-emphasis {
+  }
+
+  .card-in-emphasis {
+    border: none;
+  }
+
+  .card-in-emphasis:hover {
+    display: none;
+  }
+
+  .box-in-emphasis img {
+    height: 14rem;
+    width: auto;
+    margin-left: -4rem;
+  }
+
+  .tag-in-emphasis {
+    display: none;
+  }
+
+  .footer {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-buttons li,
+  .table-title,
+  .area-plans,
+  .text-login-box {
+    display: none;
+  }
+
+  #btn-start-session {
+    font-size: 1rem;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login {
+    width: 18rem;
+    height: auto;
+    margin-left: 3.5rem;
+  }
+
+  .books-in-emphasis h1 {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .box-in-emphasis {
+    margin-left: 0;
+    width: auto;
+    height: 16rem;
+  }
+
+  .img-in-emphasis {
+  }
+
+  .card-in-emphasis {
+    border: none;
+  }
+
+  .card-in-emphasis:hover {
+    display: none;
+  }
+
+  .box-in-emphasis img {
+    height: 13rem;
+    width: auto;
+    margin-left: -4rem;
+  }
+
+  .tag-in-emphasis {
+    display: none;
+  }
+
+  .footer {
+    font-size: 0.6rem;
+  }
+}
